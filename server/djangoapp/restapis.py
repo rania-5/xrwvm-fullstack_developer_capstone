@@ -1,3 +1,4 @@
+cat > djangoapp/restapis.py <<'EOF'
 import requests
 import os
 from dotenv import load_dotenv
@@ -29,3 +30,4 @@ def analyze_review_sentiments(text):
     except Exception as err:
         print(f"Unexpected {err=}, {type(err)=}")
         print("Network exception occurred")
+EOF
